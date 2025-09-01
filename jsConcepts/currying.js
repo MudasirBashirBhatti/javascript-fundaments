@@ -1,11 +1,8 @@
-
 // Currying is a functional programming technique where:
 // A function with multiple arguments is transformed into a sequence of functions, each taking a single argument.
 // The final function in the chain executes the logic only when all required arguments are received.
 
-
 // todo: (Problem)=> we wanted to send email to any user but only when all required parameters are available else the function should not processed. this is the basic concept of currying
-
 
 // functions using different ways
 // ? way1 to define function

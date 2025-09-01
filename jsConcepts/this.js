@@ -20,7 +20,6 @@ function abc(param) {
 abc('withoutRef')  //undefined
 //window.abc('withRef')  //again result will be window object
 
-
 // 4. this inside object's methods
 const numbers = {
     num1: 3,
@@ -36,7 +35,6 @@ numbers.avg()
 // ✅ Rule of Thumb:
 // Always ask yourself: "Who is calling the function?"
 // That "who" is what this will refer to.
-
 
 // ?........................ concepts of apply(), call() and bind() ......................
 
