@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+
+    <style>
+        .mainDiv,
+        .innerDiv {
+            padding: 16px;
+            border: 1px solid red;
+            cursor: pointer;
+        }
+
+        .ul {
+            display: flex;
+            max-width: 300px;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .ul li {
+            flex: 1;
+            padding: 40px;
+            background: gold;
+            color: black;
+            list-style: none;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- for event bubbling -->
+    <h2>Event bubbling</h2>
+    <div class="mainDiv">
+        main div
+        <div class="innerDiv">
+            inner div
+            <button class="btn">Click button</button>
+        </div>
+    </div>
+
+    <!-- for event delegation  -->
+    <h2>Event delegation</h2>
+    <ul class="ul">
+        <li>Mobiles</li>
+        <li>Laptops</li>
+        <li>Headphones</li>
+        <li>Watches</li>
+    </ul>
+</body>
+
+</html>
